@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Pizza</title>
+    <style>
+        fieldset {
+            border-color: black;
+            border-width: 5px;
+            width: 700px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <h1>Black Goose Bistro | Pizza-on-Demand</h1>
+        <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an
+            hour.</p>
+        <p>Your Information</p>
+        <form action="http://blackgoosebistro.com/pizza.php" method="post">
+            <label for="customername">Your Name:</label>
+            <input type="text" id="customername" name="customername"><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address"><br>
+            <label for="telephone">Telephone Number:</label>
+            <input type="text" id="telephone" name="telephone"><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br>
+            <label for="instruction">Delivery instruction:</label><br>
+            <textarea name="instruction" id="instruction" maxlength="400"
+                placeholder="No more than 400 charactions long"></textarea>
+            <p><b>Design Your Dream Pizza:</b></p>
+            <p>Pizza Specs</p>
+            <p>Crust (Choosen one):</p>
+
+            <input type="radio" id="contactChoice1" name="contact" value="classicwhite">
+            <label for="contactChoice1">Classic White</label>
+
+            <input type="radio" id="contactChoice2" name="contact" value="multigrain">
+            <label for="contactChoice2">Multigrain</label>
+
+            <input type="radio" id="contactChoice3" name="contact" value="cheese">
+            <label for="contactChoice3">Cheese</label>
+
+            <input type="radio" id="contactChoice3" name="contact" value="glutenfree">
+            <label for="contactChoice3">Gluten-free</label>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </fieldset>
+</body>
+
+</html>
